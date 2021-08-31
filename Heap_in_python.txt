@@ -1,0 +1,25 @@
+In python we use heap using 'heapq' module. The Property of this data structure is that each time the smallest 
+element of heap is popped(min heap). whenever elements are pushed or popped, heap structure is maintained.
+The heap[0] element also returns the smallest element each time.
+
+heapify(iterable):- This function is used to convert the interable into heap data structure.i.e in heap order
+
+heappush(heap,ele): This function is used to insert the element mentioned in it's arguments into heap. The order
+is adjusted. so as heap structure is maintained.
+
+heappop(heap): This function is used to remove and return the smallest element from heap. The order is adjusted,
+so as heap structure is maintained.
+
+heappushpop(heap,ele): This function combines the functioning of both push and pop operations in one statement,
+increasing efficency. heap order is maintained after this operation.
+
+heapreplace(heap,ele): This function also inserts and pops element in one statement, but it is different from
+above function. In this, element is first popped, then the element is pushed.i.e, the value larger than the pushed
+value can be returned. heapreplace() returns the smallest value originally in heap regardless of the pushed element
+as opposed to heappushpop().
+
+nlargest(k,iterable,key=fun): This function is used to return the k largest elements from the iterable specified
+and satisfying the key if mentioned.
+
+nsmallest(k, iterable, key=fun): This function is used to return the k smallest elements from the iterable 
+specified and satisfying the key if mentioned.
